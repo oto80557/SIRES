@@ -32,12 +32,28 @@ public class GUISIRES extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
         mbSIRES = new javax.swing.JMenuBar();
         mnArchivo = new javax.swing.JMenu();
         mniSalir = new javax.swing.JMenuItem();
         mnRegistro = new javax.swing.JMenu();
         mniRegistroEstudiantes = new javax.swing.JMenuItem();
         mniRegistroCursos = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+
+        jMenu1.setText("File");
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        jMenuItem1.setText("jMenuItem1");
+
+        jMenu3.setText("jMenu3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -60,6 +76,9 @@ public class GUISIRES extends javax.swing.JFrame {
 
         mniRegistroCursos.setText("Registro Cursos");
         mnRegistro.add(mniRegistroCursos);
+
+        jMenuItem2.setText("Matricula");
+        mnRegistro.add(jMenuItem2);
 
         mbSIRES.add(mnRegistro);
 
@@ -119,6 +138,12 @@ public class GUISIRES extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuBar mbSIRES;
     private javax.swing.JMenu mnArchivo;
     private javax.swing.JMenu mnRegistro;
