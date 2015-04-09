@@ -37,6 +37,8 @@ public class GUISIRES extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        r = new javax.swing.JTextArea();
         mbSIRES = new javax.swing.JMenuBar();
         mnArchivo = new javax.swing.JMenu();
         mniSalir = new javax.swing.JMenuItem();
@@ -56,6 +58,10 @@ public class GUISIRES extends javax.swing.JFrame {
         jMenu3.setText("jMenu3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        r.setColumns(20);
+        r.setRows(5);
+        jScrollPane1.setViewportView(r);
 
         mnArchivo.setText("Archivo");
 
@@ -88,11 +94,17 @@ public class GUISIRES extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(151, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(83, 83, 83))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(137, Short.MAX_VALUE))
         );
 
         pack();
@@ -144,12 +156,14 @@ public class GUISIRES extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JMenuBar mbSIRES;
     private javax.swing.JMenu mnArchivo;
     private javax.swing.JMenu mnRegistro;
     private javax.swing.JMenuItem mniRegistroCursos;
     private javax.swing.JMenuItem mniRegistroEstudiantes;
     private javax.swing.JMenuItem mniSalir;
+    private javax.swing.JTextArea r;
     // End of variables declaration//GEN-END:variables
 
     public static final String MNI_SALIR = "Salir";
